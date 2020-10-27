@@ -1,3 +1,9 @@
+#`````````````````````````````
+#
+#    Developed by Ivan Seagull
+#
+#`````````````````````````````
+
 #pip install instapy-cli
 
 from instapy_cli import client
@@ -31,26 +37,12 @@ elif answer==n:
 
 
 
-
-
-
 while True:
     now2 = datetime.datetime.now()
     if now2.hour == hour:
         if now2.minute == min:
             if now2.day == day:
                 if now2.minute == min:
-
                     with client(username, password) as cli:
                         cli.upload(img, text)
                         break
-                else:
-                    continue
-            else:
-                continue
-        else:
-
-            continue
-    else:
-
-        continue
